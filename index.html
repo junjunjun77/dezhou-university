@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>我的家乡——郭庵村</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      box-sizing: border-box;
+      margin: 0 auto;
+      max-width: 640px;
+      padding: 32px 20px 48px;
+      background: linear-gradient(180deg, #dcebd8, #f6f3e9 55%, #f0e2c9);
+      color: #2b2a26;
+      font-family: "Microsoft YaHei", sans-serif;
+      line-height: 1.8;
+    }
+    h1, h2, h3 {
+      font-family: "Songti SC", SimSun, serif;
+      color: #33543c;
+    }
+    h1 {
+      margin: 0 0 12px;
+      font-size: 2.2rem;
+      letter-spacing: .08em;
+    }
+    h2 {
+      margin: 36px 0 10px;
+      font-size: 1.3rem;
+      letter-spacing: .04em;
+      scroll-margin-top: 24px;
+    }
+    p, ul, table {
+      max-width: 600px;
+    }
+    p {
+      margin: 0 0 16px;
+    }
+    ul {
+      margin: 0 0 16px;
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 4px;
+    }
+    dl {
+      margin: 0 0 16px;
+    }
+    dt {
+      margin-top: 10px;
+      font-weight: bold;
+      color: #33543c;
+    }
+    dd {
+      margin: 2px 0 0;
+      color: #5f5a4c;
+    }
+    blockquote {
+      margin: 20px 0 0;
+      padding: 12px 16px;
+      border-left: 4px solid #9a6a2f;
+      background: #fffdf8;
+      color: #5f5a4c;
+    }
+    blockquote p {
+      margin: 0;
+    }
+    blockquote cite {
+      display: block;
+      margin-top: 6px;
+      font-size: .85rem;
+      font-style: normal;
+      text-align: right;
+      color: #76715f;
+    }
+    .siji {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+    .siji div {
+      padding: 14px 16px;
+      border: 1px solid #e3dccb;
+      border-radius: 8px;
+      background: #fffdf8;
+    }
+    .siji h3 {
+      margin: 0 0 4px;
+      font-size: 1rem;
+    }
+    .siji p {
+      margin: 0;
+      font-size: .92rem;
+      color: #5f5a4c;
+    }
+    img {
+      display: block;
+      width: 100%;
+      max-width: 600px;
+      height: auto;
+      border-radius: 8px;
+    }
+    nav {
+      max-width: 600px;
+      margin: 20px 0 0;
+    }
+    nav a {
+      display: inline-block;
+      margin: 0 8px 8px 0;
+      padding: 4px 12px;
+      border: 1px solid #d8d0bd;
+      border-radius: 999px;
+      color: #33543c;
+      text-decoration: none;
+      font-size: .85rem;
+    }
+    nav a:hover {
+      border-color: #9a6a2f;
+      color: #9a6a2f;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #fffdf8;
+      font-size: .95rem;
+    }
+    th, td {
+      padding: 8px 12px;
+      border: 1px solid #e3dccb;
+      text-align: left;
+    }
+    th {
+      width: 100px;
+      background: #f1ede1;
+      white-space: nowrap;
+    }
+    details {
+      max-width: 600px;
+      margin-bottom: 8px;
+      padding: 10px 14px;
+      border: 1px solid #e3dccb;
+      border-radius: 8px;
+      background: #fffdf8;
+    }
+    summary {
+      cursor: pointer;
+      color: #33543c;
+      font-weight: bold;
+    }
+    details p {
+      margin: 8px 0 0;
+      color: #5f5a4c;
+      font-size: .92rem;
+    }
+    footer {
+      max-width: 600px;
+      margin-top: 48px;
+      padding-top: 16px;
+      border-top: 1px solid #e3dccb;
+      color: #76715f;
+      font-size: .85rem;
+    }
+    footer p {
+      margin: 0 0 4px;
+    }
+    footer a {
+      display: inline-block;
+      margin-top: 8px;
+      color: #33543c;
+      text-decoration: none;
+      border-bottom: 1px solid #9a6a2f;
+    }
+    footer a:hover {
+      color: #9a6a2f;
+    }
+    form {
+      margin: 0 0 16px;
+    }
+    textarea {
+      box-sizing: border-box;
+      width: 100%;
+      padding: 10px 12px;
+      border: 1px solid #d8d0bd;
+      border-radius: 8px;
+      background: #fffdf8;
+      color: #2b2a26;
+      font-family: inherit;
+      font-size: .95rem;
+    }
+    textarea:focus {
+      outline: 2px solid #b7c7ae;
+      border-color: #33543c;
+    }
+    textarea {
+      margin-top: 8px;
+      resize: vertical;
+    }
+    button {
+      margin-top: 8px;
+      padding: 8px 20px;
+      border: 0;
+      border-radius: 999px;
+      background: #33543c;
+      color: #fff;
+      font-family: inherit;
+      font-size: .92rem;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #9a6a2f;
+    }
+    #liuyan-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    #liuyan-list li {
+      margin-bottom: 8px;
+      padding: 10px 14px;
+      border: 1px solid #e3dccb;
+      border-radius: 8px;
+      background: #fffdf8;
+      color: #5f5a4c;
+      font-size: .92rem;
+      word-break: break-word;
+    }
+    #liuyan-list li.empty {
+      border-style: dashed;
+      color: #9a9483;
+    }
+    @media (max-width: 480px) {
+      body {
+        padding: 20px 16px 36px;
+      }
+      h1 {
+        font-size: 1.8rem;
+      }
+      .siji {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body id="top">
+  <h1>郭庵村</h1>
+  <p>郭庵村位于山东省济南市商河县贾庄镇，地处鲁北平原。村里以小麦、玉米种植为主，过年时还有热闹的鼓子秧歌。</p>
+  <img src="tupian.jpg" alt="郭庵村的风景">
+
+  <nav>
+    <a href="#fengwu">家乡风物</a>
+    <a href="#siji">家乡四季</a>
+    <a href="#weidao">家乡味道</a>
+    <a href="#dangan">村庄小档案</a>
+    <a href="#wenda">小问答</a>
+    <a href="#liuyan">留言板</a>
+  </nav>
+
+  <h2 id="fengwu">家乡风物</h2>
+  <p>除了田野，村里还有几样让人惦记的东西。</p>
+  <ul>
+    <li>鼓子秧歌：国家级非物质文化遗产，伞、鼓、棒、花一齐上阵。</li>
+    <li>商河老粗布：老式织机一下一下织成，结实耐用。</li>
+    <li>乡村大集：逢集的日子，街上摆满蔬菜、衣物和日用杂货。</li>
+  </ul>
+
+  <h2 id="siji">家乡四季</h2>
+  <p>一年到头，田野的颜色一直在变。</p>
+  <div class="siji">
+    <div>
+      <h3>春 · 返青</h3>
+      <p>麦苗返青，地里开始忙起来。</p>
+    </div>
+    <div>
+      <h3>夏 · 麦收</h3>
+      <p>麦子黄了，收割机在田里来回跑。</p>
+    </div>
+    <div>
+      <h3>秋 · 收玉米</h3>
+      <p>玉米成熟，院子里堆满金黄的棒子。</p>
+    </div>
+    <div>
+      <h3>冬 · 秧歌</h3>
+      <p>过年时鼓子秧歌一响，村里就热闹了。</p>
+    </div>
+  </div>
+
+  <h2 id="weidao">家乡味道</h2>
+  <p>地里长的、灶上做的，是记忆里最实在的味道。</p>
+  <dl>
+    <dt>老豆腐</dt>
+    <dd>早上盛一碗，浇上卤子，配着热火烧吃。</dd>
+    <dt>手擀面</dt>
+    <dd>面团擀成大片，切成宽条，煮熟后拌上菜卤。</dd>
+    <dt>玉米面粥</dt>
+    <dd>新玉米磨成面，熬得稠稠的，就着咸菜最香。</dd>
+  </dl>
+  <blockquote>
+    <p>麦盖三层被，来年枕着馒头睡。</p>
+    <cite>—— 家乡农谚</cite>
+  </blockquote>
+
+  <h2 id="dangan">村庄小档案</h2>
+  <table>
+    <tr><th>位置</th><td>山东省济南市商河县贾庄镇</td></tr>
+    <tr><th>地形</th><td>鲁北平原</td></tr>
+    <tr><th>主要作物</th><td>小麦、玉米</td></tr>
+    <tr><th>家乡特色</th><td>鼓子秧歌、商河老粗布</td></tr>
+  </table>
+
+  <h2 id="wenda">家乡小问答</h2>
+  <p>点击问题，就能看到答案。</p>
+  <details>
+    <summary>郭庵村属于济南市的哪个县？</summary>
+    <p>属于商河县，位于济南市北部。</p>
+  </details>
+  <details>
+    <summary>商河鼓子秧歌什么时候入选国家级非遗？</summary>
+    <p>2006 年，入选第一批国家级非物质文化遗产名录。</p>
+  </details>
+  <details>
+    <summary>家乡的主要粮食作物是什么？</summary>
+    <p>小麦和玉米，是鲁北平原常见的旱作农业。</p>
+  </details>
+
+  <h2 id="liuyan">留言板</h2>
+  <p>写下想说的话，留言会保存在这台电脑的浏览器里。</p>
+  <form id="liuyan-form">
+    <textarea id="liuyan-text" rows="3" maxlength="100" placeholder="写点什么……" aria-label="留言内容" required></textarea>
+    <button type="submit">提交留言</button>
+  </form>
+  <ul id="liuyan-list">
+    <li class="empty">还没有留言，来写第一条吧。</li>
+  </ul>
+
+  <footer>
+    <p>我的家乡 · 山东省济南市商河县贾庄镇郭庵村</p>
+    <p>制作人：周后强 · 班级：26物联网</p>
+    <a href="#top">返回顶部 ↑</a>
+  </footer>
+
+  <script>
+    const form = document.getElementById('liuyan-form'), list = document.getElementById('liuyan-list');
+    const messages = JSON.parse(localStorage.getItem('guoan-liuyan-text') || '[]');
+    function render() {
+      if (!messages.length) return;
+      list.replaceChildren(...messages.map(text => {
+        const li = document.createElement('li');
+        li.textContent = text;
+        return li;
+      }));
+    }
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      const text = document.getElementById('liuyan-text').value.trim();
+      if (!text) return;
+      messages.unshift(text);
+      localStorage.setItem('guoan-liuyan-text', JSON.stringify(messages));
+      form.reset(); render();
+    });
+    render();
+  </script>
+</body>
+</html>
